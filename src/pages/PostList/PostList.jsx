@@ -13,7 +13,11 @@ const PostList = () => {
 
     return (
         <div><h4>PostList</h4>
-            {posts.map( p => <li key={p.id}>{p.title}</li>)}
+            {posts.map( p => 
+                <li key={p.id}>
+                    <Link to={`/posts/${p.id}`}>{p.title}</Link>
+                </li>
+            )}
         </div>
     )
 }
