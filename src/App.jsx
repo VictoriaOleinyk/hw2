@@ -7,6 +7,8 @@ import NotFoundPage from './pages/NotFoundPage/NotFoundPage'
 import SinglePost from './pages/SinglePost/SinglePost'
 import LoginPage from './pages/LoginPage/LoginPage'
 import ProfilePage from './pages/ProfilePage/ProfilePage'
+import CreatePost from "./pages/CreatePost/CreatePost.jsx";
+
 
 
 function App() {
@@ -20,7 +22,7 @@ function App() {
               <Route path='posts/:id' element={<SinglePost/>} />
               <Route path='login' element={<LoginPage/>} />
               <Route path='profile' element={<ProfilePage/>} />
-
+              <Route path='create' element={<CreatePost/>} />
               <Route path='*' element={<NotFoundPage/>}/>
         </Route>
       </Routes>

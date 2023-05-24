@@ -10,6 +10,7 @@ const Layout = () => {
                     <li> <NavLink to={'/about'} className={activeMenu}>About Us</NavLink> </li>
                     <li> <NavLink to={'/posts'} className={activeMenu}>Posts</NavLink> </li>
                     <li> <NavLink to={'/login'} className={activeMenu}>Log In</NavLink> </li>
+                    <li> <NavLink to={'/create'} className={activeMenu}>Create</NavLink> </li>
                 </ul>
             </nav>
 

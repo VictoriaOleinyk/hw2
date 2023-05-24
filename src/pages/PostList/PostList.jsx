@@ -7,7 +7,7 @@ const PostList = () => {
     const [posts, setPosts] = useState([])
 
     useEffect(() => {
-        axios.get('https://jsonplaceholder.typicode.com/posts')
+        axios.get('https://jsonplaceholder.typicode.com/posts?limit=10')
                 .then(resp => setPosts(resp.data))
     }, [])
 
